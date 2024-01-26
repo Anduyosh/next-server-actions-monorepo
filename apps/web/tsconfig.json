@@ -1,0 +1,21 @@
+{
+    "extends": "@next-server-actions-monorepo/tsconfig/react-library.json",
+    "include": [".", ".next/types/**/*.ts"],
+    "exclude": ["dist", "build", "node_modules"],
+    "compilerOptions": {
+        "lib": ["DOM", "ES2015", "ESNext"],
+        "allowJs": true,
+        "noEmit": true,
+        "incremental": true,
+        "baseUrl": "src",
+        "paths": {
+            "~/*": ["./*"]
+        },
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "strictNullChecks": true
+    }
+}

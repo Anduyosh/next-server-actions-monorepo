@@ -1,0 +1,28 @@
+{
+    "name": "next-server-actions-monorepo",
+    "description": "Quick and minimal reproduction of a NextJS app that imports a server actions shared package.",
+    "author": "Dani Perchés",
+    "repository": "https://github.com/Anduyosh/next-server-actions-monorepo",
+    "private": true,
+    "workspaces": [
+        "apps/web",
+        "packages/actions",
+        "packages/eslint-config",
+        "packages/tsconfig"
+    ],
+    "scripts": {
+        "dev": "turbo run dev --no-cache --parallel --continue",
+        "lint": "turbo run lint --no-cache --parallel --continue",
+        "tsc": "turbo run tsc --no-cache --parallel --continue",
+        "build": "turbo run build"
+    },
+    "devDependencies": {
+        "@next-server-actions-monorepo/eslint-config": "*",
+        "@next-server-actions-monorepo/tsconfig": "*",
+        "@types/node": "20.11.6",
+        "eslint": "8.56.0",
+        "prettier": "3.2.4",
+        "turbo": "1.11.3",
+        "typescript": "5.3.3"
+    }
+}

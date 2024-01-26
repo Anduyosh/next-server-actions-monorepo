@@ -1,0 +1,12 @@
+{
+    "extends": "@next-server-actions-monorepo/tsconfig/base.json",
+    "compilerOptions": {
+        "lib": ["ES2015", "ESNext"],
+        "baseUrl": "src",
+        "paths": {
+            "~/*": ["./*"]
+        }
+    },
+    "include": ["./src"],
+    "exclude": ["dist", "build", "node_modules"]
+}

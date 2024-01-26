@@ -1,0 +1,3 @@
+{
+    "extends": "@next-server-actions-monorepo/tsconfig/base.json"
+}
